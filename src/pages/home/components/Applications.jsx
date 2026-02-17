@@ -30,10 +30,17 @@ const Applications = () => {
   return (
     <div className="mx-auto max-w-7xl px-4">
       <div>
-        {/* Heading */}
-        <h1 className="text-3xl sm:text-3xl font-bold mb-10 text-center sm:text-left">
-          Upgrade Your Experience
-        </h1>
+        {/* Section Title */}
+        <div className="text-center mb-12 max-w-2xl mx-auto">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-800">
+            Upgrade Your Experience
+          </h1>
+
+          <p className="text-gray-500 mt-3">
+            Choose the perfect fiber plan for your home or business. Fast,
+            reliable, and affordable.
+          </p>
+        </div>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -67,4 +74,3 @@ const Applications = () => {
 };
 
 export default Applications;
-

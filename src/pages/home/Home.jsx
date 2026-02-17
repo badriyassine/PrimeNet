@@ -1,6 +1,7 @@
 import Ads from "./components/Ads"
 import Services from "./components/Services"
 import Applications from "./components/Applications"
+import Offers from "./components/Offers"
 
 const Home = () => {
   return (
@@ -8,6 +9,7 @@ const Home = () => {
       <Ads />
       <Services />
       <Applications />
+      <Offers />
     </div>
   )
 }

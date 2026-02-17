@@ -37,10 +37,17 @@ const services = [
 const Services = () => {
   return (
     <div className=" max-w-7xl mx-auto p-5">
-      {/* Heading */}
-      <h1 className="text-3xl sm:text-3xl font-bold mb-10 text-center sm:text-left">
-        Discover our offers
-      </h1>
+      {/* Section Title */}
+      <div className="text-center mb-12 max-w-2xl mx-auto">
+        <h1 className="text-3xl md:text-4xl font-bold text-gray-800">
+          Discover our offers
+        </h1>
+
+        <p className="text-gray-500 mt-3">
+          Choose the perfect fiber plan for your home or business. Fast,
+          reliable, and affordable.
+        </p>
+      </div>
       {/* Cards Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {services.map((service, index) => {

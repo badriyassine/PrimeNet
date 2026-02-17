@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const navItems = [
   { name: "Home", link: "/" },
-  { name: "Services", link: "/services" },
+  { name: "Mobile", link: "/mobile" },
   { name: "Wifi", link: "/wifi" },
   { name: "Plans & Pricing", link: "/plans-pricing" },
   { name: "Contact", link: "/contact" },
