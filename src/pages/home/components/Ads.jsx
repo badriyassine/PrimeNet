@@ -44,7 +44,7 @@ const Ads = () => {
   }, []);
 
   return (
-    <div className="w-full max-w-7xl mx-auto  px-4">
+    <div className="w-full max-w-7xl mx-auto  ">
       <div className="bg-[#073651] rounded-2xl overflow-hidden">
         <div className="flex flex-col lg:flex-row h-auto lg:h-100">
           {/* IMAGE CONTAINER */}

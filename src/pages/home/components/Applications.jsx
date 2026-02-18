@@ -28,7 +28,7 @@ const cardData = [
 
 const Applications = () => {
   return (
-    <div className="mx-auto max-w-7xl px-4">
+    <div className="mx-auto max-w-7xl">
       <div>
         {/* Section Title */}
         <div className="text-center mb-12 max-w-2xl mx-auto">
@@ -37,13 +37,15 @@ const Applications = () => {
           </h1>
 
           <p className="text-gray-500 mt-3">
-            Choose the perfect fiber plan for your home or business. Fast,
-            reliable, and affordable.
+            <p className="text-gray-500 mt-3">
+              Enjoy ultra-fast speeds for streaming, gaming, and working without
+              interruptions.
+            </p>
           </p>
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {cardData.map((card, idx) => (
           <div
             key={idx}

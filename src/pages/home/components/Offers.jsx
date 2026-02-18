@@ -33,11 +33,13 @@ const offers = [
     mobile: "Unlimited mobile hours",
     international: "Unlimited international calls",
   },
+  // 5G offers
+  
 ];
 
 export default function Offers() {
   return (
-    <section className="bg-gray-50 py-16 px-4">
+    <section className="bg-gray-50 py-10 px-4">
       {/* Section Title */}
       <div className="text-center mb-12 max-w-2xl mx-auto">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-800">
