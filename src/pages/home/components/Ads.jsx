@@ -4,14 +4,9 @@ import banner1 from "/ads/banner1.jpg";
 import banner2 from "/ads/banner2.jpg";
 import banner3 from "/ads/banner3.jpg";
 import banner4 from "/ads/banner4.jpg";
+import banner5 from "/ads/banner5.jpg";
 
 const slides = [
-  {
-    image: banner4,
-    title: "Fast and Reliable Internet",
-    desc: "Experience seamless connectivity with our high-speed network, perfect for streaming, gaming, and working from home.",
-    button: "Learn More",
-  },
   {
     image: banner1,
     title: "Ultra Fast Fiber Internet",
@@ -20,15 +15,27 @@ const slides = [
   },
   {
     image: banner2,
-    title: "New Mobile Plans",
+    title: "High 5G Coverage",
     desc: "Stay connected everywhere with our best plans, offering unlimited data and nationwide coverage.",
     button: "View Plans",
   },
   {
     image: banner3,
-    title: "Special Limited Offer",
-    desc: "Subscribe now and get exclusive benefits, including free installation and a 30-day money-back guarantee.",
+    title: "Star 6 Offer",
+     desc: "Unlimited social media use — chat, scroll, and share.\nStay connected on your favorite apps without limits!",
+    button: "Learn More",
+  },
+  {
+    image: banner4,
+    title: "Ultimate Gaming Experience",
+    desc: "Stable, lightning-fast ping for lag-free gaming. Free installation & 30-day money-back guarantee.",
     button: "Get Offer",
+  },
+  {
+    image: banner5,
+    title: "VR-Ready Internet",
+    desc: "Ultra-fast, stable speeds for immersive VR experiences.",
+    button: "Learn More",
   },
 ];
 
@@ -39,7 +46,7 @@ const Ads = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
-    }, 4000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
@@ -117,6 +124,7 @@ const Ads = () => {
                   transition
                   shadow-lg
                   hover:shadow-xl
+                  cursor-pointer
                 "
               >
                 {slides[current].button}
