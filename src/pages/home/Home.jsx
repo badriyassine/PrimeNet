@@ -4,6 +4,7 @@ import Applications from "./components/Applications"
 import Offers from "./components/Offers"
 import Entertainment from "./components/Entertainment"
 import FiveGOffers from "./components/FiveGOffers"
+import Supports from "./components/Supports"
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Offers />
       <Entertainment />
       <FiveGOffers />
+      <Supports />
     </div>
   )
 }
