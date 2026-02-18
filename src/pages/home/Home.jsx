@@ -3,6 +3,7 @@ import Services from "./components/Services"
 import Applications from "./components/Applications"
 import Offers from "./components/Offers"
 import Entertainment from "./components/Entertainment"
+import FiveGOffers from "./components/FiveGOffers"
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Applications />
       <Offers />
       <Entertainment />
+      <FiveGOffers />
     </div>
   )
 }

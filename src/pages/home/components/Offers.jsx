@@ -109,7 +109,7 @@ export default function Offers() {
 
               {/* Button */}
               <button className="w-full mt-4 bg-[#27b4e0] hover:bg-[#073651] cursor-pointer text-white font-semibold py-3 rounded-full transition">
-                Demande
+                Subscribe
               </button>
             </div>
           </div>
