@@ -1,50 +1,50 @@
-import { MessageCircle, MapPin, HelpCircle, Headphones } from "lucide-react";
+import { Clock, Activity, HelpCircle, Headphones } from "lucide-react";
 
-const supportItems = [
+const infoItems = [
   {
-    title: "Service WhatsApp",
-    icon: MessageCircle,
+    title: "Complaints handled within 48 hours",
+    icon: Clock,
   },
   {
-    title: "Agences commerciales",
-    icon: MapPin,
+    title: "24/7 Network stability monitoring",
+    icon: Activity,
   },
   {
-    title: "Questions fréquentes",
-    icon: HelpCircle,
-  },
-  {
-    title: "Centres de relation client",
+    title: "Customer Care Centers",
     icon: Headphones,
+  },
+  {
+    title: "Frequently Asked Questions",
+    icon: HelpCircle,
   },
 ];
 
-const Support = () => {
+const Info = () => {
   return (
     <section className="w-full max-w-7xl mx-auto mb-10 mt-10">
       {/* Title */}
       <div className="text-center mb-12 max-w-2xl mx-auto">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-800">
-          How can we help you ?
+          Service Information
         </h1>
 
         <p className="text-gray-500 mt-3">
-          Get the support you need quickly and easily. Contact us, find answers,
-          or connect with our team for assistance.
+          We are committed to providing reliable service, fast complaint
+          resolution, and continuous support for all our customers.
         </p>
       </div>
 
       {/* CONTAINER */}
       <div
         className="
-  grid
-  grid-cols-1
-  sm:grid-cols-2
-  lg:grid-cols-4
-  gap-4
-"
+        grid
+        grid-cols-1
+        sm:grid-cols-2
+        lg:grid-cols-4
+        gap-4
+      "
       >
-        {supportItems.map((item, index) => {
+        {infoItems.map((item, index) => {
           const Icon = item.icon;
 
           return (
@@ -64,17 +64,17 @@ const Support = () => {
                 hover:-translate-y-1
               "
             >
-              {/* ICON CONTAINER */}
+              {/* ICON */}
               <div
                 className="
-                w-14 h-14
-                min-w-[56px]
-                rounded-xl
-                bg-blue-50
-                flex items-center justify-center
-                transition-all duration-300
-                group-hover:bg-[#27b4e0]
-              "
+                  w-14 h-14
+                  min-w-[56px]
+                  rounded-xl
+                  bg-blue-50
+                  flex items-center justify-center
+                  transition-all duration-300
+                  group-hover:bg-[#27b4e0]
+                "
               >
                 <Icon
                   size={26}
@@ -89,10 +89,10 @@ const Support = () => {
               {/* TITLE */}
               <p
                 className="
-                font-semibold
-                text-gray-700
-                group-hover:text-[#27b4e0]
-              "
+                  font-semibold
+                  text-gray-700
+                  group-hover:text-[#27b4e0]
+                "
               >
                 {item.title}
               </p>
@@ -104,4 +104,4 @@ const Support = () => {
   );
 };
 
-export default Support;
+export default Info;

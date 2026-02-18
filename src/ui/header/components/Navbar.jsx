@@ -1,16 +1,18 @@
 import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const navItems = [
   { name: "Home", link: "/" },
   { name: "Mobile", link: "/mobile" },
   { name: "Wifi", link: "/wifi" },
   { name: "Plans & Pricing", link: "/plans-pricing" },
-  { name: "Contact", link: "/contact" },
+  { name: "FAQ", link: "/faq" },
   { name: "Support", link: "/support" },
 ];
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
 
   return (
     <nav className="relative">
@@ -50,13 +52,18 @@ const Navbar = () => {
       {/* Desktop nav */}
       <div className="hidden md:flex space-x-8 font-medium pr-4">
         {navItems.map((item, index) => (
-          <a
+          <Link
             key={index}
-            href={item.link}
-            className="text-[#073651] hover:text-[#27b4e0] transition-colors duration-200 px-2 py-1 rounded-lg focus:outline-none focus:bg-blue-50"
+            to={item.link}
+            className={
+              `px-2 py-1 rounded-lg focus:outline-none focus:bg-blue-50 transition-colors duration-200 font-medium ` +
+              (location.pathname === item.link
+                ? "text-[#27b4e0] bg-blue-50"
+                : "text-[#073651] hover:text-[#27b4e0]")
+            }
           >
             {item.name}
-          </a>
+          </Link>
         ))}
       </div>
 
@@ -64,14 +71,19 @@ const Navbar = () => {
       {menuOpen && (
         <div className="absolute right-0 top-12 z-50 w-48 bg-white shadow-lg rounded-lg py-4 animate-fade flex flex-col items-start md:hidden border border-blue-100">
           {navItems.map((item, index) => (
-            <a
+            <Link
               key={index}
-              href={item.link}
-              className="w-full px-6 py-2 text-[#073651] hover:text-blue-500 hover:bg-blue-50 transition-colors duration-200 rounded-lg focus:outline-none"
+              to={item.link}
+              className={
+                `w-full px-6 py-2 rounded-lg focus:outline-none transition-colors duration-200 ` +
+                (location.pathname === item.link
+                  ? "text-[#27b4e0] bg-blue-50"
+                  : "text-[#073651] hover:text-blue-500 hover:bg-blue-50")
+              }
               onClick={() => setMenuOpen(false)}
             >
               {item.name}
-            </a>
+            </Link>
           ))}
         </div>
       )}

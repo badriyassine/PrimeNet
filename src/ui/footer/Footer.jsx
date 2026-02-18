@@ -1,42 +1,27 @@
-import {
-  Facebook,
-  Twitter,
-  Youtube,
-  Instagram,
-  Linkedin,
-} from "lucide-react";
+import { Facebook, Twitter, Youtube, Instagram, Linkedin } from "lucide-react";
 
 const Footer = () => {
   return (
-
     <footer className="bg-[#053750] text-white pt-12 pb-6">
-
       <div className="max-w-7xl mx-auto px-6">
-
-
         {/* Top */}
         <div className="flex flex-col md:flex-row justify-between md:items-center border-b border-[#27b4e0] pb-6 mb-8">
-
-
           {/* Logo + text */}
           <div>
-
-            <img
-              src="/logo/Dark_logo.png"
-              className="w-32 mb-2"
-              alt="PrimeNet"
-            />
-
+            <a href="/">
+              <img
+                src="/logo/Dark_logo.png"
+                className="w-32 mb-2"
+                alt="PrimeNet"
+              />
+            </a>
             <p className="text-blue-200 text-sm">
-              Stay connected with PrimeNet
+              Fast. Reliable. Prime.
             </p>
-
           </div>
-
 
           {/* Social icons */}
           <div className="flex gap-4 mt-4 md:mt-0">
-
             <Facebook className="cursor-pointer hover:text-[#27b4e0] transition" />
 
             <Twitter className="cursor-pointer hover:text-[#27b4e0] transition" />
@@ -46,26 +31,16 @@ const Footer = () => {
             <Instagram className="cursor-pointer hover:text-[#27b4e0] transition" />
 
             <Linkedin className="cursor-pointer hover:text-[#27b4e0] transition" />
-
           </div>
-
         </div>
-
-
 
         {/* Links grid */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 mb-10">
-
-
           {/* Mobile */}
           <div>
-
-            <h3 className="font-semibold mb-3">
-              Mobile Offers
-            </h3>
+            <h3 className="font-semibold mb-3">Mobile Offers</h3>
 
             <ul className="space-y-2 text-sm text-blue-200">
-
               <li className="hover:text-white cursor-pointer">Recharge</li>
 
               <li className="hover:text-white cursor-pointer">Plans</li>
@@ -75,22 +50,14 @@ const Footer = () => {
               <li className="hover:text-white cursor-pointer">Portability</li>
 
               <li className="hover:text-white cursor-pointer">Roaming</li>
-
             </ul>
-
           </div>
-
-
 
           {/* Internet */}
           <div>
-
-            <h3 className="font-semibold mb-3">
-              Internet Offers
-            </h3>
+            <h3 className="font-semibold mb-3">Internet Offers</h3>
 
             <ul className="space-y-2 text-sm text-blue-200">
-
               <li className="hover:text-white cursor-pointer">Fiber Optic</li>
 
               <li className="hover:text-white cursor-pointer">ADSL</li>
@@ -98,22 +65,14 @@ const Footer = () => {
               <li className="hover:text-white cursor-pointer">4G Home</li>
 
               <li className="hover:text-white cursor-pointer">Accessories</li>
-
             </ul>
-
           </div>
-
-
 
           {/* Company */}
           <div>
-
-            <h3 className="font-semibold mb-3">
-              Company
-            </h3>
+            <h3 className="font-semibold mb-3">Company</h3>
 
             <ul className="space-y-2 text-sm text-blue-200">
-
               <li className="hover:text-white cursor-pointer">About Us</li>
 
               <li className="hover:text-white cursor-pointer">Careers</li>
@@ -121,93 +80,52 @@ const Footer = () => {
               <li className="hover:text-white cursor-pointer">Press</li>
 
               <li className="hover:text-white cursor-pointer">Blog</li>
-
             </ul>
-
           </div>
-
-
 
           {/* Account */}
           <div>
-
-            <h3 className="font-semibold mb-3">
-              My Account
-            </h3>
+            <h3 className="font-semibold mb-3">My Account</h3>
 
             <ul className="space-y-2 text-sm text-blue-200">
-
               <li className="hover:text-white cursor-pointer">Pay Bill</li>
 
               <li className="hover:text-white cursor-pointer">My Space</li>
-
             </ul>
-
           </div>
-
-
 
           {/* Support */}
           <div>
-
-            <h3 className="font-semibold mb-3">
-              Support
-            </h3>
+            <h3 className="font-semibold mb-3">Support</h3>
 
             <ul className="space-y-2 text-sm text-blue-200">
-
               <li className="hover:text-white cursor-pointer">FAQ</li>
 
               <li className="hover:text-white cursor-pointer">Contact</li>
 
               <li className="hover:text-white cursor-pointer">Stores</li>
-
             </ul>
-
           </div>
-
-
         </div>
-
-
 
         {/* Bottom */}
         <div className="flex flex-col md:flex-row justify-between text-sm text-white border-t border-[#27b4e0]  pt-6">
-
-
-          <p>
-            © 2026 PrimeNet. All rights reserved.
-          </p>
-
+          <p>© 2026 PrimeNet. All rights reserved.</p>
 
           <div className="flex gap-4 mt-3 md:mt-0">
+            <span className="hover:text-[#27b4e0] cursor-pointer">Cookies</span>
 
-            <span className="hover:text-[#27b4e0] cursor-pointer">
-              Cookies
-            </span>
-
-            <span className="hover:text-[#27b4e0] cursor-pointer">
-              Terms
-            </span>
+            <span className="hover:text-[#27b4e0] cursor-pointer">Terms</span>
 
             <span className="hover:text-[#27b4e0] cursor-pointer">
               Brochure
             </span>
 
-            <span className="hover:text-[#27b4e0] cursor-pointer">
-              Sitemap
-            </span>
-
+            <span className="hover:text-[#27b4e0] cursor-pointer">Sitemap</span>
           </div>
-
-
         </div>
-
-
       </div>
-
     </footer>
-
   );
 };
 

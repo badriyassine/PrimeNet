@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom";
+
 const Logo = () => {
   return (
     <div>
-      <a href="">
+      <Link to="/">
         <img className="w-42" src="/logo/Logo.png" alt="PrimeNet Logo" />
-      </a>
+      </Link>
     </div>
   );
 };

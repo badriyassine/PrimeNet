@@ -2,23 +2,23 @@ import { Wifi, Phone, Smartphone, Globe } from "lucide-react";
 
 const offers = [
   {
-    name: "Fiber Optic",
-    price: "299 dh/month",
-    speed: "200 Mbps",
+    name: "Adsl",
+    price: "99 dh/month",
+    speed: "20 Mbps",
     fixes: "Unlimited national landline calls",
     mobile: "10 Hours to mobile",
     international: "2 Hours international calls",
   },
   {
-    name: "Fiber Optic",
-    price: "399 dh/month",
-    speed: "500 Mbps",
+    name: "Adsl",
+    price: "149 dh/month",
+    speed: "50 Mbps",
     fixes: "Unlimited national landline calls",
     mobile: "15 Hours to mobile",
     international: "5 Hours international calls",
   },
   {
-    name: "Fiber Optic",
+    name: "Adsl",
     price: "599 dh/month",
     speed: "1 Gbps",
     fixes: "Unlimited national landline calls",
@@ -26,14 +26,14 @@ const offers = [
     international: "10 Hours international calls",
   },
   {
-    name: "Fiber Optic",
+    name: "Adsl",
     price: "999 dh/month",
     speed: "2 Gbps",
     fixes: "Unlimited national landline calls",
     mobile: "Unlimited mobile hours",
     international: "Unlimited international calls",
   },
-  // 5G offers
+
 ];
 
 export default function Offers() {
@@ -42,12 +42,11 @@ export default function Offers() {
       {/* Section Title */}
       <div className="text-center mb-12 max-w-2xl mx-auto">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-800">
-          Fiber Optic Plans
+          Adsl Plans
         </h1>
 
         <p className="text-gray-500 mt-3">
-          Choose the perfect fiber plan for your home or business. Fast,
-          reliable, and affordable.
+          Choose the perfect Adsl plan for your home and daily needs.
         </p>
       </div>
 

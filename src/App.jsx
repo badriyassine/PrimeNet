@@ -1,15 +1,40 @@
-import Header from "./ui/header/Header"
-import Home from "./pages/home/Home"
-import Footer from "./ui/footer/Footer"
+import Header from "./ui/header/Header";
+import Home from "./pages/home/Home";
+import Footer from "./ui/footer/Footer";
+import Mobile from "./pages/mobile/Mobile";
+import Wifi from "./pages/wifi/Wifi";
+import Price from "./pages/price/Price";
+import Support from "./pages/supports/Support";
+import Faq from "./pages/faq/Faq";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+}
 
 const App = () => {
   return (
-    <div >
+    <Router>
+      <ScrollToTop />
       <Header />
-      <Home />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/mobile" element={<Mobile />} />
+        <Route path="/wifi" element={<Wifi />} />
+        <Route path="/plans-pricing" element={<Price />} />
+        <Route path="/support" element={<Support />} />
+        <Route path="/faq" element={<Faq />} />
+      </Routes>
       <Footer />
-    </div>
-  )
-}
+    </Router>
+  );
+};
 
-export default App
+export default App;
