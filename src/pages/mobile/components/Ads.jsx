@@ -1,9 +1,7 @@
 import { useEffect, useState } from "react";
 
-
 import banner2 from "/ads/banner2.png";
 import banner3 from "/ads/banner3.png";
-
 
 const slides = [
   {
@@ -15,10 +13,9 @@ const slides = [
   {
     image: banner3,
     title: "*6 is Back",
-     desc: "Unlimited social media use — chat, scroll, and share.\nStay connected on your favorite apps without limits!",
+    desc: "Unlimited social media use — chat, scroll, and share.\nStay connected on your favorite apps without limits!",
     button: "Learn More",
   },
-
 ];
 
 const Ads = () => {
@@ -28,7 +25,7 @@ const Ads = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
-    }, 5000);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);

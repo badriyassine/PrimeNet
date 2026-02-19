@@ -14,7 +14,7 @@ const infoItems = [
     icon: Headphones,
   },
   {
-    title: "FAQ & Troubleshooting",
+    title: <a href="/faq">FAQ & Troubleshooting</a>,
     icon: HelpCircle,
   },
 ];
