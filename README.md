@@ -1,16 +1,72 @@
-# React + Vite
+# Landing Page Design ( company website )
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+PrimeNet is a modern and responsive telecom company website built using React.js and Tailwind CSS. The project showcases a professional landing page with clean design, mobile responsiveness, and optimized performance, created to strengthen my front-end development portfolio. 
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
 
-## React Compiler
+- [Live Demo](#live-demo)
+- [Preview image](#screenshot)
+- [Features](#features)
+- [Installation](#how-to-run-it)
+- [Technologies Used](#technologies-used)
+- [Author](#Author)
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+---
 
-## Expanding the ESLint configuration
+## Live Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+[See the website live](https://primenet-seven.vercel.app/)
+
+---
+
+## Screenshot
+
+![Dashboard Screenshot](/screenshot/primenet.png)
+
+---
+
+## Features
+
+- Fully responsive design (mobile, tablet, desktop)
+- Modern and fast UI built with React
+- Professional telecom landing page structure 
+- Services section (Internet plans, gaming, entertainment)
+- Modern navigation bar
+- and more...
+
+---
+
+## how to run it
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/badriyassine/PrimeNet.git
+```
+
+2. Open the folder then terminal:
+
+```bash
+run this commands `npm install`, then `npm run dev`.
+``` 
+
+---
+
+## Technologies Used
+
+- react.js
+- vite
+- react-router-dom
+- heroicons
+- lucide-react
+- tailwindcss
+
+---
+
+## Author
+
+Made by [**BADRI YASSINE**](https://github.com/badriyassine)
+
+---
