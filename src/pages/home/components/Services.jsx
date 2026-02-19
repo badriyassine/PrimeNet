@@ -49,18 +49,21 @@ const Services = () => {
         </p>
       </div>
       {/* Cards Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {services.map((service, index) => {
           const Icon = service.icon;
 
           return (
             <div
               key={index}
-              className="flex items-center space-x-4 relative bg-white rounded-xl shadow-md p-6 transition duration-300 hover:shadow-xl group   cursor-pointer hover:border-[#27b4e0] border border-[#27b4e0]"
+              className="flex items-center space-x-4 relative bg-white rounded-xl shadow-md p-6 transition duration-300 hover:shadow-xl group   cursor-pointer border border-[#27b4e0]"
             >
               {/* Icon */}
-              <div className="bg-[#27b4e0] p-3 rounded-xl text-white group-hover:bg-[#073651] transition duration-300">
-                <Icon size={40} className="text-white" />
+              <div className="bg-[#27b4e0] p-3 rounded-xl text-white group-hover:bg-white group-hover:text-[#27b4e0] transition duration-300">
+                <Icon
+                  size={40}
+                  className="text-white group-hover:text-[#27b4e0]"
+                />
               </div>
 
               <div>
