@@ -1,45 +1,46 @@
-import { Wifi, Phone, Smartphone, Globe } from "lucide-react";
+import { Wifi, Smartphone, Globe, SatelliteDish } from "lucide-react";
 
 const offers = [
   {
-    name: "Adsl",
-    price: "99 dh/month",
+    name: "Satellite",
+    price: "199 dh/month",
     speed: "20 Mbps",
-    fixes: "Unlimited national landline calls",
-    mobile: "10 Hours to mobile",
-    international: "2 Hours international calls",
-    installation: "100 dh",
-    equipment: "199 dh",
+    mobile: "5 Hours to mobile",
+    international: "1 Hour international calls",
+    installation: "0 dh",
+    equipment: "499 dh",
   },
   {
-    name: "Adsl",
-    price: "149 dh/month",
+    name: "Satellite",
+    price: "299 dh/month",
     speed: "50 Mbps",
-    fixes: "Unlimited national landline calls",
-    mobile: "15 Hours to mobile",
-    international: "5 Hours international calls",
-    installation: "100 dh",
-    equipment: "199 dh",
+    mobile: "10 Hours to mobile",
+    international: "3 Hours international calls",
+    installation: "0 dh",
+    equipment: "499 dh",
   },
   {
-    name: "DarBox 5G",
-    price: "349 dh/month",
+    name: "Satellite",
+    price: "399 dh/month",
     speed: "100 Mbps",
-    mobile: "20 Hours to mobile",
-    equipment: "299 dh",
-    sim: "Free 5G SIM card included",
+    mobile: "Unlimited mobile hours",
+    installation: "Free",
+    equipment: "499 dh",
+    bonus: "Free satellite dish included",
   },
   {
-    name: "DarBox 5G",
-    price: "449 dh/month",
+    name: "Satellite Pro",
+    price: "599 dh/month",
     speed: "200 Mbps",
     mobile: "Unlimited mobile hours",
-    equipment: "299 dh",
-    sim: "Free 5G SIM card included",
+    international: "Unlimited international calls",
+    installation: "Free",
+    equipment: "Free",
+    bonus: "Free dish + priority support",
   },
 ];
 
-export default function Offers() {
+export default function SatelliteOffers() {
   return (
     <section className="bg-gray-50 py-10 px-4">
 
@@ -47,11 +48,11 @@ export default function Offers() {
       <div className="text-center mb-12 max-w-2xl mx-auto">
 
         <h1 className="text-3xl md:text-4xl font-bold text-gray-800">
-          Adsl & DarBox 5G Plans
+          Satellite Internet Plans
         </h1>
 
         <p className="text-gray-500 mt-3">
-          Choose the perfect plan for your home and daily needs.
+          Reliable internet anywhere, even in remote areas.
         </p>
 
       </div>
@@ -69,6 +70,8 @@ export default function Offers() {
 
             {/* Header */}
             <div className="bg-[#27b4e0] text-white text-center py-6">
+
+              <SatelliteDish className="mx-auto mb-2" size={26} />
 
               <p className="text-sm opacity-90">
                 {offer.name}
@@ -92,28 +95,10 @@ export default function Offers() {
 
                   <Wifi size={20} className="text-[#27b4e0]" />
 
-                  <span className="font-medium">
-                    {offer.speed}
-                  </span>
+                  <span>{offer.speed}</span>
 
                 </div>
               )}
-
-
-
-              {/* Landline */}
-              {offer.fixes && (
-                <div className="flex items-center gap-3 border border-gray-300 rounded-lg p-3">
-
-                  <Phone size={20} className="text-[#27b4e0]" />
-
-                  <span className="font-medium">
-                    {offer.fixes}
-                  </span>
-
-                </div>
-              )}
-
 
 
               {/* Mobile */}
@@ -122,13 +107,10 @@ export default function Offers() {
 
                   <Smartphone size={20} className="text-[#27b4e0]" />
 
-                  <span className="font-medium">
-                    {offer.mobile}
-                  </span>
+                  <span>{offer.mobile}</span>
 
                 </div>
               )}
-
 
 
               {/* International */}
@@ -137,9 +119,7 @@ export default function Offers() {
 
                   <Globe size={20} className="text-[#27b4e0]" />
 
-                  <span className="font-medium">
-                    {offer.international}
-                  </span>
+                  <span>{offer.international}</span>
 
                 </div>
               )}
@@ -151,19 +131,19 @@ export default function Offers() {
 
                 {offer.installation && (
                   <li>
-                    Installation fee: {offer.installation}
+                    Installation: {offer.installation}
                   </li>
                 )}
 
                 {offer.equipment && (
                   <li>
-                    Equipment fee: {offer.equipment}
+                    Equipment: {offer.equipment}
                   </li>
                 )}
 
-                {offer.sim && (
-                  <li>
-                    {offer.sim}
+                {offer.bonus && (
+                  <li className="text-green-600 font-medium">
+                    {offer.bonus}
                   </li>
                 )}
 
@@ -172,10 +152,10 @@ export default function Offers() {
 
 
               {/* Button */}
-              <button
-                className="w-full mt-auto bg-[#27b4e0] hover:bg-[#073651] cursor-pointer text-white font-semibold py-3 rounded-full transition duration-300"
-              >
+              <button className="w-full mt-auto bg-[#27b4e0] hover:bg-[#073651] text-white font-semibold py-3 rounded-full transition duration-300">
+
                 Subscribe
+
               </button>
 
 

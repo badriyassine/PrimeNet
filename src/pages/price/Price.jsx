@@ -3,6 +3,7 @@ import FiveGOffers from "../../pages/home/components/FiveGOffers"
 import MobileOffers from "./components/MobileOffers"
 import Supports from "../../pages/home/components/Supports"
 import Entertainment from "../home/components/Entertainment"
+import SatelliteOffers from "./../sat/SatelliteOffers"
 
 const Price = () => {
   return (
@@ -10,6 +11,7 @@ const Price = () => {
       <Offers/>
       <FiveGOffers/>
       <MobileOffers/>
+      <SatelliteOffers/>
       <Entertainment/>
       <Supports/>
     </div>
