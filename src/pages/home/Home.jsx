@@ -11,10 +11,10 @@ const Home = () => {
     <div className="space-y-10">
       <Ads />
       <Services />
-      <Applications />
       <Offers />
-      <Entertainment />
+      <Applications />
       <FiveGOffers />
+      <Entertainment />
       <Supports />
     </div>
   )

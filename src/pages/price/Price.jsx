@@ -9,8 +9,8 @@ const Price = () => {
     <div className="">
       <Offers/>
       <FiveGOffers/>
-      <Entertainment/>
       <MobileOffers/>
+      <Entertainment/>
       <Supports/>
     </div>
   )
