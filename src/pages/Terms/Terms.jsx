@@ -63,17 +63,17 @@ export default function Terms() {
 
             <ul className="text-gray-600 space-y-2">
               <li className="flex items-center gap-2">
-                <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
+                <span className="w-2 h-2 bg-[#27b4e0] rounded-full"></span>
                 Provide accurate information
               </li>
 
               <li className="flex items-center gap-2">
-                <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
+                <span className="w-2 h-2 bg-[#27b4e0] rounded-full"></span>
                 Do not misuse the platform
               </li>
 
               <li className="flex items-center gap-2">
-                <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
+                <span className="w-2 h-2 bg-[#27b4e0] rounded-full"></span>
                 Respect website security
               </li>
             </ul>

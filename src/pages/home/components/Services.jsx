@@ -56,11 +56,11 @@ const Services = () => {
           return (
             <div
               key={index}
-              className="flex items-center space-x-4 relative bg-white rounded-xl shadow-md p-6 transition duration-300 hover:shadow-xl group border-b-4 border-transparent cursor-pointer hover:border-[#27b4e0]"
+              className="flex items-center space-x-4 relative bg-white rounded-xl shadow-md p-6 transition duration-300 hover:shadow-xl group   cursor-pointer hover:border-[#27b4e0] border border-[#27b4e0]"
             >
               {/* Icon */}
-              <div className="">
-                <Icon size={40} className="text-[#27b4e0]" />
+              <div className="bg-[#27b4e0] p-3 rounded-xl text-white group-hover:bg-[#073651] transition duration-300">
+                <Icon size={40} className="text-white" />
               </div>
 
               <div>

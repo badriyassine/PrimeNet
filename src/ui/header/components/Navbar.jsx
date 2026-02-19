@@ -56,9 +56,9 @@ const Navbar = () => {
             key={index}
             to={item.link}
             className={
-              `px-2 py-1 rounded-lg focus:outline-none focus:bg-[#27b4e0] transition-colors duration-200 font-medium ` +
+              `px-2 py-1 rounded-lg focus:outline-none focus:bg-[#073651] transition-colors duration-200 font-medium ` +
               (location.pathname === item.link
-                ? "text-white bg-[#27b4e0]"
+                ? "text-white bg-[#073651]"
                 : "text-[#073651] hover:text-[#27b4e0]")
             }
           >
