@@ -1,41 +1,20 @@
 import { useEffect, useState } from "react";
 
 import banner1 from "/ads/banner1.png";
-import banner2 from "/ads/banner2.png";
-import banner3 from "/ads/banner3.png";
-import banner4 from "/ads/banner4.png";
-import banner5 from "/ads/banner5.png";
+import banner2 from "/wifiAds/fiber.png";
 
 const slides = [
   {
-    image: banner1,
-    title: "Ultra Fast Fiber Internet",
-    desc: "Enjoy speeds up to 1Gbps with unlimited access, upgrading your online experience to the next level.",
-    button: "Discover",
-  },
-  {
     image: banner2,
-    title: "High 5G Coverage",
-    desc: "Stay connected everywhere with our best plans, offering unlimited data and nationwide coverage.",
-    button: "View Plans",
-  },
-  {
-    image: banner3,
-    title: "*6 is Back",
-     desc: "Unlimited social media use — chat, scroll, and share.\nStay connected on your favorite apps without limits!",
-    button: "Learn More",
-  },
-  {
-    image: banner4,
     title: "Ultimate Gaming Experience",
     desc: "Stable, lightning-fast ping for lag-free gaming. Free installation & 30-day money-back guarantee.",
     button: "Get Offer",
   },
   {
-    image: banner5,
-    title: "VR-Ready Internet",
-    desc: "Ultra-fast, stable speeds for immersive VR experiences.",
-    button: "Learn More",
+    image: banner1,
+    title: "Ultra Fast Fiber Internet",
+    desc: "Enjoy speeds up to 1Gbps with unlimited access, upgrading your online experience to the next level.",
+    button: "Discover",
   },
 ];
 
@@ -46,7 +25,7 @@ const Ads = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
-    }, 5000);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);

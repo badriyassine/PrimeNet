@@ -50,15 +50,15 @@ const Navbar = () => {
       </div>
 
       {/* Desktop nav */}
-      <div className="hidden md:flex space-x-8 font-medium pr-4">
+      <div className="hidden md:flex space-x-4 font-medium pr-4">
         {navItems.map((item, index) => (
           <Link
             key={index}
             to={item.link}
             className={
-              `px-2 py-1 rounded-lg focus:outline-none focus:bg-blue-50 transition-colors duration-200 font-medium ` +
+              `px-2 py-1 rounded-lg focus:outline-none focus:bg-[#27b4e0] transition-colors duration-200 font-medium ` +
               (location.pathname === item.link
-                ? "text-[#27b4e0] bg-blue-50"
+                ? "text-white bg-[#27b4e0]"
                 : "text-[#073651] hover:text-[#27b4e0]")
             }
           >

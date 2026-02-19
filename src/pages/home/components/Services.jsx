@@ -21,7 +21,7 @@ const services = [
     icon: SatelliteDish,
   },
   {
-    title: "4G LTE Internet",
+    title: "High signal strength",
     icon: Signal,
   },
   {

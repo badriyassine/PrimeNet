@@ -41,9 +41,9 @@ const Footer = () => {
             <h3 className="font-semibold mb-3">Mobile Offers</h3>
 
             <ul className="space-y-2 text-sm text-blue-200">
-              <li className="hover:text-white cursor-pointer">Recharge</li>
+              <li className="hover:text-white cursor-pointer"><a href="/mobile">Recharge</a></li>
 
-              <li className="hover:text-white cursor-pointer">Plans</li>
+              <li className="hover:text-white cursor-pointer"><a href="/price">Plans</a></li>
 
               <li className="hover:text-white cursor-pointer">Smartphones</li>
 
@@ -58,11 +58,11 @@ const Footer = () => {
             <h3 className="font-semibold mb-3">Internet Offers</h3>
 
             <ul className="space-y-2 text-sm text-blue-200">
-              <li className="hover:text-white cursor-pointer">Fiber Optic</li>
+              <li className="hover:text-white cursor-pointer"><a href="/wifi">Fiber Optic</a></li>
 
-              <li className="hover:text-white cursor-pointer">ADSL</li>
+              <li className="hover:text-white cursor-pointer"><a href="/wifi">ADSL</a></li>
 
-              <li className="hover:text-white cursor-pointer">4G Home</li>
+              <li className="hover:text-white cursor-pointer"><a href="/mobile">5G Home</a></li>
 
               <li className="hover:text-white cursor-pointer">Accessories</li>
             </ul>
@@ -99,9 +99,9 @@ const Footer = () => {
             <h3 className="font-semibold mb-3">Support</h3>
 
             <ul className="space-y-2 text-sm text-blue-200">
-              <li className="hover:text-white cursor-pointer">FAQ</li>
+              <li className="hover:text-white cursor-pointer"><a href="/faq">FAQ</a></li>
 
-              <li className="hover:text-white cursor-pointer">Contact</li>
+              <li className="hover:text-white cursor-pointer"><a href="/support">Contact</a></li>
 
               <li className="hover:text-white cursor-pointer">Stores</li>
             </ul>
@@ -115,7 +115,7 @@ const Footer = () => {
           <div className="flex gap-4 mt-3 md:mt-0">
             <span className="hover:text-[#27b4e0] cursor-pointer">Cookies</span>
 
-            <span className="hover:text-[#27b4e0] cursor-pointer">Terms</span>
+            <span className="hover:text-[#27b4e0] cursor-pointer"><a href="/terms">Terms</a></span>
 
             <span className="hover:text-[#27b4e0] cursor-pointer">
               Brochure

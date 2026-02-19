@@ -1,4 +1,5 @@
 import Header from "./ui/header/Header";
+import LocationDisplay from "./ui/locationDisplay/LocationDisplay";
 import Home from "./pages/home/Home";
 import Footer from "./ui/footer/Footer";
 import Mobile from "./pages/mobile/Mobile";
@@ -6,6 +7,7 @@ import Wifi from "./pages/wifi/Wifi";
 import Price from "./pages/price/Price";
 import Support from "./pages/supports/Support";
 import Faq from "./pages/faq/Faq";
+import Terms from "./pages/Terms/Terms";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import { useEffect } from "react";
@@ -24,6 +26,7 @@ const App = () => {
     <Router>
       <ScrollToTop />
       <Header />
+      <LocationDisplay />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/mobile" element={<Mobile />} />
@@ -31,6 +34,7 @@ const App = () => {
         <Route path="/plans-pricing" element={<Price />} />
         <Route path="/support" element={<Support />} />
         <Route path="/faq" element={<Faq />} />
+        <Route path="/terms" element={<Terms />} />
       </Routes>
       <Footer />
     </Router>

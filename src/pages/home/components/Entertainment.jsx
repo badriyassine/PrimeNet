@@ -4,7 +4,7 @@ const services = [
     category: "Sports",
     description: "Watch the biggest live sports events anytime.",
     price: "From $3/week",
-    image: "/Entertaiment/beinsport.png",
+    image: "/Entertaiment/beinsport.jpg",
     gradient: "from-black/80 via-black/40 to-transparent",
   },
   {
@@ -80,7 +80,7 @@ const Entertainment = () => {
 
               <p className="font-semibold mb-4">{service.price}</p>
 
-              <button className="border border-white px-5 py-2 rounded-full hover:bg-white hover:text-black transition duration-300">
+              <button className="border cursor-pointer border-white px-5 py-2 rounded-full hover:bg-white hover:text-black transition duration-300">
                 Discover
               </button>
             </div>

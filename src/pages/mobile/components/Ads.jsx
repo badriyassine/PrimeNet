@@ -1,18 +1,11 @@
 import { useEffect, useState } from "react";
 
-import banner1 from "/ads/banner1.png";
+
 import banner2 from "/ads/banner2.png";
 import banner3 from "/ads/banner3.png";
-import banner4 from "/ads/banner4.png";
-import banner5 from "/ads/banner5.png";
+
 
 const slides = [
-  {
-    image: banner1,
-    title: "Ultra Fast Fiber Internet",
-    desc: "Enjoy speeds up to 1Gbps with unlimited access, upgrading your online experience to the next level.",
-    button: "Discover",
-  },
   {
     image: banner2,
     title: "High 5G Coverage",
@@ -25,18 +18,7 @@ const slides = [
      desc: "Unlimited social media use — chat, scroll, and share.\nStay connected on your favorite apps without limits!",
     button: "Learn More",
   },
-  {
-    image: banner4,
-    title: "Ultimate Gaming Experience",
-    desc: "Stable, lightning-fast ping for lag-free gaming. Free installation & 30-day money-back guarantee.",
-    button: "Get Offer",
-  },
-  {
-    image: banner5,
-    title: "VR-Ready Internet",
-    desc: "Ultra-fast, stable speeds for immersive VR experiences.",
-    button: "Learn More",
-  },
+
 ];
 
 const Ads = () => {
@@ -52,7 +34,7 @@ const Ads = () => {
   }, []);
 
   return (
-    <div className="w-full max-w-7xl mx-auto">
+    <div className="w-full max-w-7xl mx-auto mb-10">
       <div className="bg-[#073651] rounded-2xl overflow-hidden">
         <div className="flex flex-col lg:flex-row h-auto lg:h-[420px]">
           {/* IMAGE CONTAINER */}

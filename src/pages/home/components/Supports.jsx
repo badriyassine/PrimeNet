@@ -1,22 +1,22 @@
 import { MessageCircle, MapPin, HelpCircle, Headphones } from "lucide-react";
 
 const supportItems = [
-  {
-    title: "Service WhatsApp",
-    icon: MessageCircle,
-  },
-  {
-    title: "Agences commerciales",
-    icon: MapPin,
-  },
-  {
-    title: "Questions fréquentes",
-    icon: HelpCircle,
-  },
-  {
-    title: "Centres de relation client",
-    icon: Headphones,
-  },
+{
+  title: "WhatsApp Support",
+  icon: MessageCircle,
+},
+{
+  title: "Our Agencies",
+  icon: MapPin,
+},
+{
+  title: "FAQ & Troubleshooting",
+  icon: HelpCircle,
+},
+{
+  title: "Customer Care Centers",
+  icon: Headphones,
+},
 ];
 
 const Support = () => {
