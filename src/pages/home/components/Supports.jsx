@@ -1,4 +1,5 @@
 import { MessageCircle, MapPin, HelpCircle, Headphones } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const supportItems = [
 {
@@ -10,7 +11,7 @@ const supportItems = [
   icon: MapPin,
 },
 {
-  title: <a href="/faq">FAQ & Troubleshooting</a>,
+  title: <Link to="/faq">FAQ & Troubleshooting</Link>,
   icon: HelpCircle,
 },
 {

@@ -1,4 +1,5 @@
 import { Clock, Activity, HelpCircle, Headphones } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const infoItems = [
   {
@@ -14,7 +15,7 @@ const infoItems = [
     icon: Headphones,
   },
   {
-    title: <a href="/faq">FAQ & Troubleshooting</a>,
+    title: <Link to="/faq">FAQ & Troubleshooting</Link>,
     icon: HelpCircle,
   },
 ];

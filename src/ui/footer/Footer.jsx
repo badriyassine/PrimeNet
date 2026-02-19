@@ -1,4 +1,5 @@
 import { Facebook, Twitter, Youtube, Instagram, Linkedin } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -41,9 +42,9 @@ const Footer = () => {
             <h3 className="font-semibold mb-3">Mobile Offers</h3>
 
             <ul className="space-y-2 text-sm text-blue-200">
-              <li className="hover:text-white cursor-pointer"><a href="/mobile">Recharge</a></li>
+              <li className="hover:text-white cursor-pointer"><Link to="/mobile">Recharge</Link></li>
 
-              <li className="hover:text-white cursor-pointer"><a href="/price">Plans</a></li>
+              <li className="hover:text-white cursor-pointer"><Link to="/price">Plans</Link></li>
 
               <li className="hover:text-white cursor-pointer">Smartphones</li>
 
@@ -58,11 +59,11 @@ const Footer = () => {
             <h3 className="font-semibold mb-3">Internet Offers</h3>
 
             <ul className="space-y-2 text-sm text-blue-200">
-              <li className="hover:text-white cursor-pointer"><a href="/wifi">Fiber Optic</a></li>
+              <li className="hover:text-white cursor-pointer"><Link to="/wifi">Fiber Optic</Link></li>
 
-              <li className="hover:text-white cursor-pointer"><a href="/wifi">ADSL</a></li>
+              <li className="hover:text-white cursor-pointer"><Link to="/wifi">ADSL</Link></li>
 
-              <li className="hover:text-white cursor-pointer"><a href="/mobile">5G Home</a></li>
+              <li className="hover:text-white cursor-pointer"><Link to="/mobile">5G Home</Link></li>
 
               <li className="hover:text-white cursor-pointer">Accessories</li>
             </ul>
@@ -99,9 +100,9 @@ const Footer = () => {
             <h3 className="font-semibold mb-3">Support</h3>
 
             <ul className="space-y-2 text-sm text-blue-200">
-              <li className="hover:text-white cursor-pointer"><a href="/faq">FAQ</a></li>
+              <li className="hover:text-white cursor-pointer"><Link to="/faq">FAQ</Link></li>
 
-              <li className="hover:text-white cursor-pointer"><a href="/support">Contact</a></li>
+              <li className="hover:text-white cursor-pointer"><Link to="/support">Contact</Link></li>
 
               <li className="hover:text-white cursor-pointer">Stores</li>
             </ul>
@@ -115,7 +116,7 @@ const Footer = () => {
           <div className="flex gap-4 mt-3 md:mt-0">
             <span className="hover:text-[#27b4e0] cursor-pointer">Cookies</span>
 
-            <span className="hover:text-[#27b4e0] cursor-pointer"><a href="/terms">Terms</a></span>
+            <span className="hover:text-[#27b4e0] cursor-pointer"><Link to="/terms">Terms</Link></span>
 
             <span className="hover:text-[#27b4e0] cursor-pointer">
               Brochure
