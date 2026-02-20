@@ -89,11 +89,9 @@ const Ads = () => {
             </Link>
 
             {/* Decoration lines */}
-            <div className="absolute top-6 right-6 flex flex-col gap-2 items-end">
+            <div className="hidden lg:flex absolute top-6 right-6 flex-col gap-2 items-end">
               <div className="h-[2px] w-16 bg-white/60 rounded-full"></div>
-
               <div className="h-[2px] w-10 bg-white/40 rounded-full"></div>
-
               <div className="h-[2px] w-6 bg-white/20 rounded-full"></div>
             </div>
 
