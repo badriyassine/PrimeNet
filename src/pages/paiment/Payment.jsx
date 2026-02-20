@@ -7,12 +7,12 @@ function generateBankCode() {
 
 export default function Payment() {
   const navigate = useNavigate();
-
   const location = useLocation();
 
   const [method, setMethod] = useState("");
   const [accepted, setAccepted] = useState(false);
   const [bankCode] = useState(generateBankCode());
+
   const [card, setCard] = useState({
     number: "",
     name: "",
@@ -29,22 +29,36 @@ export default function Payment() {
 
   const handlePay = (e) => {
     e.preventDefault();
+
     if (!method) {
       alert("Please select a payment method");
       return;
     }
+
     if (!accepted) {
       alert("Please accept the terms first.");
       return;
     }
-    if (method === "card") {
+
+    // Visa or MasterCard
+    if (method === "visa" || method === "mastercard") {
       if (!card.number || !card.name || !card.expiry || !card.cvv) {
         alert("Please fill all card details");
         return;
       }
+
       alert("Payment Successful (Demo)");
       navigate("/");
-    } else if (method === "bank") {
+    }
+
+    // Apple Pay or Google Pay
+    else if (method === "applepay" || method === "googlepay") {
+      alert("Redirecting to secure payment... (Demo)");
+      navigate("/");
+    }
+
+    // Bank
+    else if (method === "bank") {
       alert("Bank payment instructions shown. (Demo)");
       navigate("/");
     }
@@ -57,10 +71,14 @@ export default function Payment() {
           <h1 className="text-3xl text-white font-bold">Payment</h1>
           <p className="text-blue-100">Complete your order securely</p>
         </div>
+
         <form className="p-8 space-y-6" onSubmit={handlePay} method="Post">
           {/* Payment Method */}
           <div>
-            <label className="block font-semibold mb-2">Payment Method</label>
+            <label className="block font-semibold mb-2">
+              Choose Payment Method
+            </label>
+
             <select
               name="method"
               value={method}
@@ -69,12 +87,21 @@ export default function Payment() {
               className="w-full border border-gray-300 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-[#27b4e0] transition"
             >
               <option value="">Select Payment Method</option>
-              <option value="card">Visa / MasterCard</option>
+
+              <option value="visa">Visa</option>
+
+              <option value="mastercard">MasterCard</option>
+
+              <option value="applepay">Apple Pay</option>
+
+              <option value="googlepay">Google Pay</option>
+
               <option value="bank">Bank Payment</option>
             </select>
           </div>
+
           {/* Card Payment Form */}
-          {method === "card" && (
+          {(method === "visa" || method === "mastercard") && (
             <>
               <input
                 type="text"
@@ -85,6 +112,7 @@ export default function Payment() {
                 required
                 className="w-full border border-gray-300 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-[#27b4e0] transition"
               />
+
               <input
                 type="text"
                 name="name"
@@ -94,6 +122,7 @@ export default function Payment() {
                 required
                 className="w-full border border-gray-300 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-[#27b4e0] transition"
               />
+
               <div className="grid grid-cols-2 gap-4">
                 <input
                   type="text"
@@ -104,6 +133,7 @@ export default function Payment() {
                   required
                   className="w-full border border-gray-300 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-[#27b4e0] transition"
                 />
+
                 <input
                   type="text"
                   name="cvv"
@@ -116,17 +146,31 @@ export default function Payment() {
               </div>
             </>
           )}
+
+          {/* Apple Pay & Google Pay Message */}
+          {(method === "applepay" || method === "googlepay") && (
+            <div className="bg-blue-50 border border-blue-200 rounded-xl p-4">
+              <div className="text-gray-700">
+                You will be redirected to complete your payment securely using{" "}
+                <b>{method === "applepay" ? "Apple Pay" : "Google Pay"}</b>
+              </div>
+            </div>
+          )}
+
           {/* Bank Payment Instructions */}
           {method === "bank" && (
             <div className="bg-blue-50 border border-blue-200 rounded-xl p-4">
               <div className="mb-2">
                 <span className="font-semibold">Bank Payment Code:</span>
+
                 <span className="ml-2 text-lg font-mono">{bankCode}</span>
               </div>
+
               <div className="text-gray-700 mb-2">
                 Please take this code to your nearest bank branch to complete
                 your payment.
               </div>
+
               <div className="text-yellow-700 bg-yellow-100 rounded p-2 mt-2">
                 <b>Notice:</b> Your order will be held for <b>3 days</b>. If you
                 do not complete the payment at the bank and visit our agency
@@ -135,14 +179,45 @@ export default function Payment() {
               </div>
             </div>
           )}
+
+          {/* Payment Icons  */}
+          <div>
+            <h6 className="font-semibold mb-3 text-gray-600">
+              Payment Methods We Support :
+            </h6>
+
+            <ul className="flex space-x-2 text-sm text-blue-200">
+              <li>
+                <img className="w-12" src="/paiment/master-card.svg" />
+              </li>
+
+              <li>
+                <img className="w-12" src="/paiment/visa.svg" />
+              </li>
+
+              <li>
+                <img className="w-12" src="/paiment/googlepay.svg" />
+              </li>
+
+              <li>
+                <img className="w-12" src="/paiment/applepay.svg" />
+              </li>
+
+              <li className="border-2 border-gray-200 rounded-md bg-white px-1 flex justify-center">
+                <img className="w-12" src="/paiment/Cashplus.svg" />
+              </li>
+            </ul>
+          </div>
+
           {/* Terms */}
           <div className="flex items-center gap-2 mt-4">
             <input
               type="checkbox"
               checked={accepted}
               onChange={(e) => setAccepted(e.target.checked)}
-              className="w-4 h-4"
+              className="w-4 h-4 cursor-pointer"
             />
+
             <p className="text-sm text-gray-600">
               I accept the{" "}
               <span className="text-[#27b4e0] font-medium">
@@ -150,6 +225,7 @@ export default function Payment() {
               </span>
             </p>
           </div>
+
           {/* Buttons */}
           <div className="flex gap-4 pt-4">
             <button
@@ -159,6 +235,7 @@ export default function Payment() {
             >
               Cancel
             </button>
+
             <button
               type="submit"
               className="flex-1 bg-[#27b4e0] hover:opacity-80 cursor-pointer text-white py-3 rounded-full font-semibold"

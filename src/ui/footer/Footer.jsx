@@ -16,26 +16,44 @@ const Footer = () => {
                 alt="PrimeNet"
               />
             </a>
-            <p className="text-blue-200 text-sm">
-              Fast. Reliable. Prime.
-            </p>
+            <p className="text-blue-200 text-sm">Fast. Reliable. Prime.</p>
           </div>
 
           {/* Social icons */}
           <div className="flex gap-4 mt-4 md:mt-0">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Facebook className="cursor-pointer hover:text-[#27b4e0] transition" />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Twitter className="cursor-pointer hover:text-[#27b4e0] transition" />
             </a>
-            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://youtube.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Youtube className="cursor-pointer hover:text-[#27b4e0] transition" />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Instagram className="cursor-pointer hover:text-[#27b4e0] transition" />
             </a>
-            <a href="https://www.linkedin.com/in/yassine-badri-0279a7342/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.linkedin.com/in/yassine-badri-0279a7342/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Linkedin className="cursor-pointer hover:text-[#27b4e0] transition" />
             </a>
           </div>
@@ -48,9 +66,13 @@ const Footer = () => {
             <h3 className="font-semibold mb-3">Mobile Offers</h3>
 
             <ul className="space-y-2 text-sm text-blue-200">
-              <li className="hover:text-white cursor-pointer"><Link to="/mobile">Recharge</Link></li>
+              <li className="hover:text-white cursor-pointer">
+                <Link to="/mobile">Recharge</Link>
+              </li>
 
-              <li className="hover:text-white cursor-pointer"><Link to="/plans-pricing">Plans</Link></li>
+              <li className="hover:text-white cursor-pointer">
+                <Link to="/plans-pricing">Plans</Link>
+              </li>
 
               <li className="hover:text-white cursor-pointer">Smartphones</li>
 
@@ -65,11 +87,17 @@ const Footer = () => {
             <h3 className="font-semibold mb-3">Internet Offers</h3>
 
             <ul className="space-y-2 text-sm text-blue-200">
-              <li className="hover:text-white cursor-pointer"><Link to="/wifi">Fiber Optic</Link></li>
+              <li className="hover:text-white cursor-pointer">
+                <Link to="/wifi">Fiber Optic</Link>
+              </li>
 
-              <li className="hover:text-white cursor-pointer"><Link to="/wifi">ADSL</Link></li>
+              <li className="hover:text-white cursor-pointer">
+                <Link to="/wifi">ADSL</Link>
+              </li>
 
-              <li className="hover:text-white cursor-pointer"><Link to="/mobile">5G Home</Link></li>
+              <li className="hover:text-white cursor-pointer">
+                <Link to="/mobile">5G Home</Link>
+              </li>
 
               <li className="hover:text-white cursor-pointer">Accessories</li>
             </ul>
@@ -106,11 +134,57 @@ const Footer = () => {
             <h3 className="font-semibold mb-3">Support</h3>
 
             <ul className="space-y-2 text-sm text-blue-200">
-              <li className="hover:text-white cursor-pointer"><Link to="/faq">FAQ</Link></li>
+              <li className="hover:text-white cursor-pointer">
+                <Link to="/faq">FAQ</Link>
+              </li>
 
-              <li className="hover:text-white cursor-pointer"><Link to="/support">Contact</Link></li>
+              <li className="hover:text-white cursor-pointer">
+                <Link to="/support">Contact</Link>
+              </li>
 
               <li className="hover:text-white cursor-pointer">Stores</li>
+            </ul>
+          </div>
+
+          {/* paiment methods */}
+          <div>
+            <h3 className="font-semibold mb-3">Payment Methods</h3>
+
+            <ul className="flex space-x-2 text-sm text-blue-200">
+              <li className="hover:text-white cursor-pointer">
+                <img
+                  className="w-16"
+                  src="/paiment/master-card.svg"
+                  alt="mastercard"
+                />
+              </li>
+              <li className="hover:text-white cursor-pointer">
+                <img className="w-16" src="/paiment/visa.svg" alt="visa" />
+              </li>
+              <li className="hover:text-white cursor-pointer">
+                <img
+                  className="w-16"
+                  src="/paiment/googlepay.svg"
+                  alt="googlepay"
+                />
+              </li>
+              <li className="hover:text-white cursor-pointer">
+                <img className="w-16" src="/paiment/applepay.svg" alt="applepay" />
+              </li>
+              <li className="hover:text-white cursor-pointer bg-white px-1 rounded-xs flex justify-center">
+                <img
+                  className="w-16"
+                  src="/paiment/cih_bank.svg"
+                  alt="cih_bank"
+                />
+              </li>
+              <li className="hover:text-white cursor-pointer bg-white px-1 rounded-xs flex justify-center">
+                <img
+                  className="w-16"
+                  src="/paiment/Cashplus.svg"
+                  alt="cashplus"
+                />
+              </li>
             </ul>
           </div>
         </div>
@@ -122,7 +196,9 @@ const Footer = () => {
           <div className="flex gap-4 mt-3 md:mt-0">
             <span className="hover:text-[#27b4e0] cursor-pointer">Cookies</span>
 
-            <span className="hover:text-[#27b4e0] cursor-pointer"><Link to="/terms">Terms</Link></span>
+            <span className="hover:text-[#27b4e0] cursor-pointer">
+              <Link to="/terms">Terms</Link>
+            </span>
 
             <span className="hover:text-[#27b4e0] cursor-pointer">
               Brochure

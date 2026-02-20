@@ -71,7 +71,7 @@ export default function Agencies() {
         </p>
         <div className="mb-6 flex justify-center">
           <select
-            className="border border-[#27b4e0] rounded-xl p-3 w-full max-w-xs focus:outline-none focus:ring-2 focus:ring-[#27b4e0]"
+            className="border cursor-pointer border-[#27b4e0] rounded-xl p-3 w-full max-w-xs focus:outline-none focus:ring-2 focus:ring-[#27b4e0]"
             value={selectedCity ? selectedCity.name : ""}
             onChange={(e) => {
               const city = moroccoCities.find((c) => c.name === e.target.value);
@@ -122,7 +122,7 @@ export default function Agencies() {
           </MapContainer>
         </div>
       </div>
-        <Support />
+      <Support />
     </section>
   );
 }

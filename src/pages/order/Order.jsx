@@ -276,7 +276,7 @@ export default function Order() {
                 type="checkbox"
                 checked={accepted}
                 onChange={(e) => setAccepted(e.target.checked)}
-                className="w-4 h-4"
+                className="w-4 h-4 cursor-pointer "
               />
               <p className="text-sm text-gray-600">
                 I accept the{" "}

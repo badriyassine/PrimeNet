@@ -61,6 +61,7 @@ run this commands `npm install`, then `npm run dev`.
 - react-router-dom
 - heroicons
 - lucide-react
+- react-icons
 - tailwindcss
 
 ---
