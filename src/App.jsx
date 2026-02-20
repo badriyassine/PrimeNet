@@ -11,6 +11,7 @@ import Terms from "./pages/Terms/Terms";
 import Order from "./pages/order/Order";
 import Payment from "./pages/paiment/Payment";
 import Agencies from "./pages/agencies/Agencies";
+import DynamicTitle from "./pages/home/dynamicTitle/DynamicTitle";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import { useEffect } from "react";
@@ -28,6 +29,7 @@ const App = () => {
   return (
     <Router>
       <ScrollToTop />
+      <DynamicTitle />
       <Header />
       <LocationDisplay />
       <Routes>
@@ -46,5 +48,6 @@ const App = () => {
     </Router>
   );
 };
+
 
 export default App;
