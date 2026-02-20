@@ -36,7 +36,7 @@ const services = [
 
 const Entertainment = () => {
   return (
-    <section className="  max-w-7xl mx-auto m-10">
+    <section className="  max-w-7xl mx-auto m-10 ">
       {/* Title */}
       <div className="text-center mb-12 max-w-2xl mx-auto">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-800">
@@ -50,11 +50,11 @@ const Entertainment = () => {
       </div>
 
       {/* Cards Container */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mx-2 md:mx-2 sm:mx-0">
         {services.map((service, index) => (
           <div
             key={index}
-            className="relative h-[380px] md:h-[400px] lg:h-[400px] rounded-2xl overflow-hidden shadow-lg group cursor-pointer"
+            className="relative h-[380px] md:h-[400px] lg:h-[400px] rounded-xl overflow-hidden shadow-lg group cursor-pointer"
           >
             {/* Background Image */}
             <img

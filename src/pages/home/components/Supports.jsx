@@ -38,7 +38,7 @@ const Support = () => {
     }
   };
   return (
-    <section className="w-full max-w-7xl mx-auto mb-10 mt-10">
+    <section className="w-full max-w-7xl mx-auto mb-10 mt-10 ">
       {/* Title */}
       <div className="text-center mb-12 max-w-2xl mx-auto">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-800">
@@ -57,6 +57,7 @@ const Support = () => {
   sm:grid-cols-2
   lg:grid-cols-4
   gap-4
+  mx-2 sm:mx-0
 "
       >
         {supportItems.map((item, index) => {
@@ -64,7 +65,7 @@ const Support = () => {
           return (
             <div
               key={index}
-              className="group bg-white rounded-xl border border-[#27b4e0] p-6 flex items-center gap-4 cursor-pointer transition-all duration-300 hover:border-[#27b4e0] hover:shadow-lg hover:-translate-y-1"
+              className="md:mx-2 group bg-white rounded-xl border border-[#27b4e0] p-6 flex items-center gap-4 cursor-pointer transition-all duration-300 hover:border-[#27b4e0] hover:shadow-lg hover:-translate-y-1"
               onClick={() => handleCardClick(item)}
               tabIndex={0}
               role="button"

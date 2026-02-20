@@ -28,7 +28,7 @@ const cardData = [
 
 const Applications = () => {
   return (
-    <div className="mx-auto max-w-7xl">
+    <div className="mx-auto max-w-7xl ">
       {/* Section Title */}
       <div className="text-center mb-12 max-w-2xl mx-auto">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-800">
@@ -41,11 +41,11 @@ const Applications = () => {
       </div>
 
       {/* Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mx-2 sm:mx-0 md:mx-2 ">
         {cardData.map((card, idx) => (
           <div
             key={idx}
-            className="relative rounded-xl shadow-2xl overflow-hidden flex flex-col justify-end items-start group w-full h-[380px] sm:h-[400px]"
+            className=" relative rounded-xl shadow-2xl overflow-hidden flex flex-col justify-end items-start group w-full h-[380px] sm:h-[400px]"
           >
             {/* Background Image */}
             <img

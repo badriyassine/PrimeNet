@@ -13,7 +13,7 @@ const slides = [
     title: "Ultra Fast Fiber Internet",
     desc: "Enjoy speeds up to 1Gbps with unlimited access, upgrading your online experience to the next level.",
     button: "Discover",
-    path: "/wifi", 
+    path: "/wifi",
   },
   {
     image: banner2,
@@ -58,9 +58,8 @@ const Ads = () => {
 
   return (
     <div className="w-full max-w-7xl mx-auto">
-      <div className="bg-[#073651] rounded-2xl overflow-hidden">
+      <div className="bg-[#073651]  md:mx-2 sm:mx-2 mx-2 rounded-xl overflow-hidden">
         <div className="flex flex-col lg:flex-row lg:h-[420px]">
-
           {/* IMAGE */}
           <div className="w-full lg:w-1/2 h-52 md:h-72 lg:h-full overflow-hidden relative">
             <div
@@ -79,14 +78,9 @@ const Ads = () => {
 
           {/* TEXT */}
           <div className="w-full lg:w-1/2 flex flex-col justify-center p-10 text-white">
+            <h1 className="text-3xl font-bold mb-4">{slides[current].title}</h1>
 
-            <h1 className="text-3xl font-bold mb-4">
-              {slides[current].title}
-            </h1>
-
-            <p className="text-gray-200 mb-6">
-              {slides[current].desc}
-            </p>
+            <p className="text-gray-200 mb-6">{slides[current].desc}</p>
 
             {/* ✅ BUTTON LINK */}
             <Link to={slides[current].path}>
@@ -104,9 +98,7 @@ const Ads = () => {
                 {slides[current].button}
               </button>
             </Link>
-
           </div>
-
         </div>
       </div>
     </div>

@@ -43,6 +43,7 @@ const Info = () => {
         sm:grid-cols-2
         lg:grid-cols-4
         gap-4
+        md:mx-2 sm:mx-2 mx-2
       "
       >
         {infoItems.slice(0, 4).map((item, index) => {
