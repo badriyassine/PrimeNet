@@ -9,7 +9,7 @@ import {
 
 const Ads = () => {
   return (
-    <div className="w-full max-w-7xl mx-auto mb-10">
+    <div className="w-full max-w-7xl mx-auto mb-6">
       <div className="bg-[#073651] rounded-2xl overflow-hidden shadow-xl">
         <div className="flex flex-col lg:flex-row h-auto lg:h-[420px]">
           {/* IMAGE */}

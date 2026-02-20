@@ -22,7 +22,7 @@ const infoItems = [
 
 const Info = () => {
   return (
-    <section className="w-full max-w-7xl mx-auto mt-5 mb-10">
+    <section className="w-full max-w-7xl mx-auto mt-10 mb-10">
       {/* Title */}
       <div className="text-center mb-12 max-w-2xl mx-auto">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-800">

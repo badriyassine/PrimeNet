@@ -23,15 +23,21 @@ const Footer = () => {
 
           {/* Social icons */}
           <div className="flex gap-4 mt-4 md:mt-0">
-            <Facebook className="cursor-pointer hover:text-[#27b4e0] transition" />
-
-            <Twitter className="cursor-pointer hover:text-[#27b4e0] transition" />
-
-            <Youtube className="cursor-pointer hover:text-[#27b4e0] transition" />
-
-            <Instagram className="cursor-pointer hover:text-[#27b4e0] transition" />
-
-            <Linkedin className="cursor-pointer hover:text-[#27b4e0] transition" />
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <Facebook className="cursor-pointer hover:text-[#27b4e0] transition" />
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+              <Twitter className="cursor-pointer hover:text-[#27b4e0] transition" />
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+              <Youtube className="cursor-pointer hover:text-[#27b4e0] transition" />
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <Instagram className="cursor-pointer hover:text-[#27b4e0] transition" />
+            </a>
+            <a href="https://www.linkedin.com/in/yassine-badri-0279a7342/" target="_blank" rel="noopener noreferrer">
+              <Linkedin className="cursor-pointer hover:text-[#27b4e0] transition" />
+            </a>
           </div>
         </div>
 
