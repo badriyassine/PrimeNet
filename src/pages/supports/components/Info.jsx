@@ -11,7 +11,7 @@ const infoItems = [
     icon: Activity,
   },
   {
-    title: "Customer Care Centers",
+    title: <Link to="/agencies">Our Agencies</Link>,
     icon: Headphones,
   },
   {
@@ -45,61 +45,45 @@ const Info = () => {
         gap-4
       "
       >
-        {infoItems.map((item, index) => {
+        {infoItems.slice(0, 4).map((item, index) => {
           const Icon = item.icon;
-
           return (
             <div
               key={index}
-              className="
-                group
-                bg-white
-                rounded-xl
-                border border-[#27b4e0]
-                p-6
-                flex items-center gap-4
-                cursor-pointer
-                transition-all duration-300
-                hover:border-[#27b4e0]
-                hover:shadow-lg
-                hover:-translate-y-1
-              "
+              className="group bg-white rounded-xl border border-[#27b4e0] p-6 flex items-center gap-4 cursor-pointer transition-all duration-300 hover:border-[#27b4e0] hover:shadow-lg hover:-translate-y-1"
             >
               {/* ICON */}
-              <div
-                className="
-                  w-14 h-14
-                  min-w-[56px]
-                  rounded-xl
-                  bg-blue-50
-                  flex items-center justify-center
-                  transition-all duration-300
-                  group-hover:bg-[#27b4e0]
-                "
-              >
+              <div className="w-14 h-14 min-w-[56px] rounded-xl bg-blue-50 flex items-center justify-center transition-all duration-300 group-hover:bg-[#27b4e0]">
                 <Icon
                   size={26}
-                  className="
-                    text-[#27b4e0]
-                    transition-all duration-300
-                    group-hover:text-white
-                  "
+                  className="text-[#27b4e0] transition-all duration-300 group-hover:text-white"
                 />
               </div>
-
               {/* TITLE */}
-              <p
-                className="
-                  font-semibold
-                  text-gray-700
-                  group-hover:text-[#27b4e0]
-                "
-              >
+              <p className="font-semibold text-gray-700 group-hover:text-[#27b4e0]">
                 {item.title}
               </p>
             </div>
           );
         })}
+        {/* Render FAQ as the last item if present */}
+        {infoItems[4] &&
+          (() => {
+            const FAQIcon = infoItems[4].icon;
+            return (
+              <div className="group bg-white rounded-xl border border-[#27b4e0] p-6 flex items-center gap-4 cursor-pointer transition-all duration-300 hover:border-[#27b4e0] hover:shadow-lg hover:-translate-y-1">
+                <div className="w-14 h-14 min-w-[56px] rounded-xl bg-blue-50 flex items-center justify-center transition-all duration-300 group-hover:bg-[#27b4e0]">
+                  <FAQIcon
+                    size={26}
+                    className="text-[#27b4e0] transition-all duration-300 group-hover:text-white"
+                  />
+                </div>
+                <p className="font-semibold text-gray-700 group-hover:text-[#27b4e0]">
+                  {infoItems[4].title}
+                </p>
+              </div>
+            );
+          })()}
       </div>
     </section>
   );

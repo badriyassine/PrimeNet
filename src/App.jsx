@@ -10,6 +10,7 @@ import Faq from "./pages/faq/Faq";
 import Terms from "./pages/Terms/Terms";
 import Order from "./pages/order/Order";
 import Payment from "./pages/paiment/Payment";
+import Agencies from "./pages/agencies/Agencies";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import { useEffect } from "react";
@@ -39,6 +40,7 @@ const App = () => {
         <Route path="/terms" element={<Terms />} />
         <Route path="/order" element={<Order />} />
         <Route path="/payment" element={<Payment />} />
+        <Route path="/agencies" element={<Agencies />} />
       </Routes>
       <Footer />
     </Router>

@@ -34,7 +34,7 @@ export default function Support() {
   };
 
   return (
-    <section className="  from-blue-50 via-white to-white py-16 px-4">
+    <section className="  from-blue-50 via-white to-white  px-4">
 
       <div className="max-w-7xl mx-auto bg-white rounded-xl shadow-xl overflow-hidden border border-gray-100">
         {/* Header */}
