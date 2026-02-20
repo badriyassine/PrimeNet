@@ -150,7 +150,7 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold mb-3">Payment Methods</h3>
 
-            <ul className="flex space-x-2 text-sm text-blue-200">
+            <ul className="flex space-x-1  text-blue-200">
               <li className="hover:text-white cursor-pointer">
                 <img
                   className="w-16"
@@ -171,20 +171,21 @@ const Footer = () => {
               <li className="hover:text-white cursor-pointer">
                 <img className="w-16" src="/paiment/applepay.svg" alt="applepay" />
               </li>
-              <li className="hover:text-white cursor-pointer bg-white px-1 rounded-xs flex justify-center">
+              <li className="hover:text-white cursor-pointer bg-white px-1 rounded-sm flex justify-center">
                 <img
                   className="w-16"
                   src="/paiment/cih_bank.svg"
                   alt="cih_bank"
                 />
               </li>
-              <li className="hover:text-white cursor-pointer bg-white px-1 rounded-xs flex justify-center">
+              <li className="hover:text-white cursor-pointer bg-white px-1 rounded-sm flex justify-center">
                 <img
                   className="w-16"
                   src="/paiment/Cashplus.svg"
                   alt="cashplus"
                 />
               </li>
+              
             </ul>
           </div>
         </div>
