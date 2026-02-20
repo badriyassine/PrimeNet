@@ -1,4 +1,5 @@
 import { Smartphone, Phone, Globe, Zap } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const offers = [
   {
@@ -100,9 +101,11 @@ export default function FiveGOffers() {
               </ul>
 
               {/* Button */}
-              <button className="w-full mt-4 bg-[#27b4e0] hover:bg-[#073651] cursor-pointer text-white font-semibold py-3 rounded-full transition">
-                Subscribe
-              </button>
+              <Link to="/order">
+                <button className="w-full mt-4 bg-[#27b4e0] hover:bg-[#073651] cursor-pointer text-white font-semibold py-3 rounded-full transition">
+                  Subscribe
+                </button>
+              </Link>
             </div>
           </div>
         ))}

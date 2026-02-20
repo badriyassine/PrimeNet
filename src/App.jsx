@@ -8,6 +8,8 @@ import Price from "./pages/price/Price";
 import Support from "./pages/supports/Support";
 import Faq from "./pages/faq/Faq";
 import Terms from "./pages/Terms/Terms";
+import Order from "./pages/order/Order";
+import Payment from "./pages/paiment/Payment";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import { useEffect } from "react";
@@ -35,6 +37,8 @@ const App = () => {
         <Route path="/support" element={<Support />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/terms" element={<Terms />} />
+        <Route path="/order" element={<Order />} />
+        <Route path="/payment" element={<Payment />} />
       </Routes>
       <Footer />
     </Router>
