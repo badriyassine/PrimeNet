@@ -10,8 +10,6 @@ export default function Payment() {
 
   const location = useLocation();
 
-  const orderData = location.state;
-
   const [method, setMethod] = useState("");
   const [accepted, setAccepted] = useState(false);
   const [bankCode] = useState(generateBankCode());
