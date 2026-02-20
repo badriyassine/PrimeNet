@@ -174,13 +174,6 @@ const Footer = () => {
               <li className="hover:text-white cursor-pointer bg-white px-1 rounded-sm flex justify-center">
                 <img
                   className="w-16"
-                  src="/paiment/cih_bank.svg"
-                  alt="cih_bank"
-                />
-              </li>
-              <li className="hover:text-white cursor-pointer bg-white px-1 rounded-sm flex justify-center">
-                <img
-                  className="w-16"
                   src="/paiment/Cashplus.svg"
                   alt="cashplus"
                 />

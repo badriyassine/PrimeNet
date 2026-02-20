@@ -202,10 +202,6 @@ export default function Payment() {
               <li>
                 <img className="w-12" src="/paiment/applepay.svg" />
               </li>
-
-              <li className="border-2 border-gray-200 rounded-md bg-white px-1 flex justify-center">
-                <img className="w-12" src="/paiment/Cashplus.svg" />
-              </li>
             </ul>
           </div>
 

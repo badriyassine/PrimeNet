@@ -4,47 +4,53 @@ import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import Support from "../../pages/home/components/Supports";
 
-// Example: all major Moroccan cities (add more as needed)
+
 const moroccoCities = [
-  { name: "Casablanca", lat: 33.5731, lng: -7.5898 },
-  { name: "Rabat", lat: 34.0209, lng: -6.8416 },
-  { name: "Marrakech", lat: 31.6295, lng: -7.9811 },
-  { name: "Tangier", lat: 35.7595, lng: -5.8339 },
   { name: "Agadir", lat: 30.4278, lng: -9.5981 },
-  { name: "Fes", lat: 34.0331, lng: -5.0004 },
-  { name: "Meknes", lat: 33.8955, lng: -5.5473 },
-  { name: "Oujda", lat: 34.6833, lng: -1.9095 },
-  { name: "Kenitra", lat: 34.261, lng: -6.5802 },
-  { name: "Tetouan", lat: 35.5785, lng: -5.3684 },
-  { name: "Safi", lat: 32.2994, lng: -9.2372 },
-  { name: "El Jadida", lat: 33.2473, lng: -8.496 },
+  { name: "Aït Melloul", lat: 30.3920, lng: -9.5740 },
+  { name: "Azemmour", lat: 33.2820, lng: -8.5110 },
   { name: "Beni Mellal", lat: 32.3394, lng: -6.3608 },
-  { name: "Nador", lat: 35.1681, lng: -2.9335 },
-  { name: "Taza", lat: 34.2164, lng: -4.0088 },
-  { name: "Khouribga", lat: 32.8823, lng: -6.9063 },
-  { name: "Settat", lat: 33.0011, lng: -7.6166 },
-  { name: "Larache", lat: 35.1932, lng: -6.1557 },
-  { name: "Ksar El Kebir", lat: 35.0017, lng: -5.9004 },
-  { name: "Guelmim", lat: 28.987, lng: -10.0574 },
-  { name: "Tantan", lat: 28.438, lng: -11.103 },
-  { name: "Errachidia", lat: 31.9314, lng: -4.4248 },
-  { name: "Ouarzazate", lat: 30.9335, lng: -6.937 },
+  { name: "Berrechid", lat: 33.2045, lng: -7.2647 },
+  { name: "Casablanca", lat: 33.5731, lng: -7.5898 },
+  { name: "Chefchaouen", lat: 35.1689, lng: -5.2686 },
   { name: "Dakhla", lat: 23.6847, lng: -15.957 },
-  { name: "Laayoune", lat: 27.1536, lng: -13.2033 },
-  { name: "Azilal", lat: 32.0042, lng: -6.5786 },
-  { name: "Taourirt", lat: 34.4071, lng: -2.8973 },
-  { name: "Sidi Ifni", lat: 29.3783, lng: -10.1711 },
-  { name: "Midelt", lat: 32.6852, lng: -4.7454 },
-  { name: "Berkane", lat: 34.9279, lng: -2.3226 },
-  { name: "Tiznit", lat: 29.6974, lng: -9.7323 },
+  { name: "Dar Bouazza", lat: 33.4870, lng: -7.7260 },
+  { name: "Dcheira El Jihadia", lat: 30.3680, lng: -9.5930 },
+  { name: "El Jadida", lat: 33.2473, lng: -8.496 },
+  { name: "Errachidia", lat: 31.9314, lng: -4.4248 },
   { name: "Essaouira", lat: 31.5085, lng: -9.7595 },
-  { name: "Al Hoceima", lat: 35.2517, lng: -3.9372 },
-  { name: "Sidi Bennour", lat: 32.6522, lng: -8.4476 },
-  { name: "Youssoufia", lat: 32.2463, lng: -8.5296 },
+  { name: "Fes", lat: 34.0331, lng: -5.0004 },
+  { name: "Fnideq", lat: 35.8907, lng: -5.3373 },
+  { name: "Inezgane", lat: 30.3960, lng: -9.5820 },
   { name: "Jerada", lat: 34.3061, lng: -2.1597 },
-  { name: "Boujdour", lat: 26.1333, lng: -14.5 },
+  { name: "Kenitra", lat: 34.261, lng: -6.5802 },
+  { name: "Khemisset", lat: 33.8115, lng: -6.0791 },
+  { name: "Khouribga", lat: 32.8823, lng: -6.9063 },
+  { name: "Ksar El Kebir", lat: 35.0017, lng: -5.9004 },
+  { name: "Laayoune", lat: 27.1536, lng: -13.2033 },
+  { name: "Larache", lat: 35.1932, lng: -6.1557 },
+  { name: "Marrakech", lat: 31.6295, lng: -7.9811 },
+  { name: "Midelt", lat: 32.6852, lng: -4.7454 },
+  { name: "Meknes", lat: 33.8955, lng: -5.5473 },
+  { name: "Mohammedia", lat: 33.6890, lng: -7.3920 },
+  { name: "Nador", lat: 35.1681, lng: -2.9335 },
+  { name: "Ouarzazate", lat: 30.9335, lng: -6.937 },
+  { name: "Oujda", lat: 34.6833, lng: -1.9095 },
+  { name: "Rabat", lat: 34.0209, lng: -6.8416 },
+  { name: "Salé", lat: 34.0194, lng: -6.8235 },
+  { name: "Safi", lat: 32.2994, lng: -9.2372 },
+  { name: "Settat", lat: 33.0011, lng: -7.6166 },
+  { name: "Sidi Bennour", lat: 32.6522, lng: -8.4476 },
+  { name: "Sidi Slimane", lat: 33.2346, lng: -6.2782 },
   { name: "Smara", lat: 26.7394, lng: -11.6847 },
-  // ...add more cities as needed
+  { name: "Souk El Arbaa", lat: 34.3070, lng: -6.0090 },
+  { name: "Temara", lat: 33.8931, lng: -6.9070 },
+  { name: "Tanger", lat: 35.7595, lng: -5.8339 },
+  { name: "Taourirt", lat: 34.4071, lng: -2.8973 },
+  { name: "Taza", lat: 34.2164, lng: -4.0088 },
+  { name: "Tetouan", lat: 35.5785, lng: -5.3684 },
+  { name: "Tiznit", lat: 29.6974, lng: -9.7323 },
+  { name: "Youssoufia", lat: 32.2463, lng: -8.5296 },
 ];
 
 function MapZoomToCity({ city }) {
@@ -79,11 +85,14 @@ export default function Agencies() {
             }}
           >
             <option value="">Select a city</option>
-            {moroccoCities.map((city, i) => (
-              <option key={i} value={city.name}>
-                {city.name}
-              </option>
-            ))}
+            {moroccoCities
+              .slice() 
+              .sort((a, b) => a.name.localeCompare(b.name))
+              .map((city, i) => (
+                <option key={i} value={city.name}>
+                  {city.name}
+                </option>
+              ))}
           </select>
         </div>
         <div className="w-full h-[400px] rounded-xl overflow-hidden mb-8 bg-blue-50 flex items-center justify-center relative z-0">
