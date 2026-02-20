@@ -267,7 +267,7 @@ export default function Order() {
                 type="submit"
                 className="flex-1 cursor-pointer bg-[#27b4e0] hover:opacity-80 text-white py-3 rounded-full font-semibold"
               >
-                Continue to Payment
+                Continue
               </button>
             </div>
             {/* Terms */}

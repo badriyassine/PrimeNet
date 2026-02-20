@@ -52,8 +52,8 @@ export default function Payment() {
 
   return (
     <section className="py-16 px-4">
-      <div className="max-w-4xl mx-auto bg-white shadow-xl rounded-xl border border-gray-300">
-        <div className="bg-[#27b4e0] rounded-xl p-8">
+      <div className="max-w-7xl mx-auto bg-white shadow-xl rounded-xl border border-gray-300">
+        <div className="bg-[#27b4e0] rounded-t-xl p-8">
           <h1 className="text-3xl text-white font-bold">Payment</h1>
           <p className="text-blue-100">Complete your order securely</p>
         </div>
