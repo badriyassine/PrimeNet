@@ -69,7 +69,7 @@ export default function Offers() {
             </div>
 
             {/* Body */}
-            <div className="p-5 space-y-3 flex flex-col flex-grow">
+            <div className="p-5 space-y-3 flex flex-col grow">
               {/* Speed */}
               {offer.speed && (
                 <div className="flex items-center gap-3 border border-gray-300 rounded-lg p-3">
@@ -114,7 +114,7 @@ export default function Offers() {
                 {offer.equipment && <li>Equipment fee: {offer.equipment}</li>}
                 {offer.sim && <li>{offer.sim}</li>}
               </ul>
-              <div className="flex-grow"></div>
+              <div className="grow"></div>
               {/* Button at bottom */}
               <Link to="/order" className="block mt-4">
                 <button className="w-full bg-[#27b4e0] hover:bg-[#073651] cursor-pointer text-white font-semibold py-3 rounded-full transition duration-300">

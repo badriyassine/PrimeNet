@@ -1,32 +1,5 @@
-import { MessageCircle, MapPin, HelpCircle, Headphones } from "lucide-react";
-import { Link, useNavigate } from "react-router-dom";
-
-const supportItems = [
-  {
-    title: "WhatsApp Support",
-    icon: MessageCircle,
-    link: "https://web.whatsapp.com/",
-    external: true,
-  },
-  {
-    title: "Our Agencies",
-    icon: MapPin,
-    link: "/agencies",
-    external: false,
-  },
-  {
-    title: "FAQ & Troubleshooting",
-    icon: HelpCircle,
-    link: "/faq",
-    external: false,
-  },
-  {
-    title: "Customer Care Centers",
-    icon: Headphones,
-    link: "/Support",
-    external: false,
-  },
-];
+import { useNavigate } from "react-router-dom";
+import supportItems from "./components/support";
 
 const Support = () => {
   const navigate = useNavigate();
@@ -50,16 +23,7 @@ const Support = () => {
         </p>
       </div>
       {/* CONTAINER */}
-      <div
-        className="
-  grid
-  grid-cols-1
-  sm:grid-cols-2
-  lg:grid-cols-4
-  gap-4
-  mx-2 sm:mx-0
-"
-      >
+      <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mx-2 sm:mx-0">
         {supportItems.map((item, index) => {
           const Icon = item.icon;
           return (
@@ -74,7 +38,7 @@ const Support = () => {
               }}
             >
               {/* ICON CONTAINER */}
-              <div className="w-14 h-14 min-w-[56px] rounded-xl bg-blue-50 flex items-center justify-center transition-all duration-300 group-hover:bg-[#27b4e0]">
+              <div className="w-14 h-14 min-w-14 rounded-xl bg-blue-50 flex items-center justify-center transition-all duration-300 group-hover:bg-[#27b4e0]">
                 <Icon
                   size={26}
                   className="text-[#27b4e0] transition-all duration-300 group-hover:text-white"

@@ -1,10 +1,10 @@
-import Ads from "./components/Ads"
-import Services from "./components/Services"
-import Applications from "./components/Applications"
-import Offers from "./components/Offers"
-import Entertainment from "./components/Entertainment"
-import FiveGOffers from "./components/FiveGOffers"
-import Supports from "./components/Supports"
+import Ads from "./components/ads/Ads";
+import Services from "./components/services/Services";
+import Applications from "./components/applications/Applications";
+import Offers from "./components/offers/Offers";
+import Entertainment from "./components/entertainment/Entertainment";
+import FiveGOffers from "./components/FiveGOffers/FiveGOffers";
+import Supports from "./components/support/Supports";
 
 const Home = () => {
   return (
@@ -17,7 +17,7 @@ const Home = () => {
       <Entertainment />
       <Supports />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

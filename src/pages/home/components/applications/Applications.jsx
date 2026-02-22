@@ -1,30 +1,4 @@
-const cardData = [
-  {
-    title: "Netflix 4K Streaming",
-    description: "Enjoy Netflix in stunning 4K quality with ultra fast speeds.",
-    gradient: "from-[#ff3a3a]/80 via-[#ff7575]/20 to-transparent",
-    image: "/applications/netflix.jpg",
-  },
-  {
-    title: "Gaming Low Ping",
-    description:
-      "Play online games with low and stable ping for a smooth experience.",
-    gradient: "from-[#1e90ff]/80 via-[#00eaff]/20 to-transparent",
-    image: "/applications/gaming.jpg",
-  },
-  {
-    title: "High Quality Video Calls",
-    description: "Make crystal-clear video calls without interruptions.",
-    gradient: "from-[#8f5aff]/80 via-[#b47bff]/20 to-transparent",
-    image: "/applications/call.jpg",
-  },
-  {
-    title: "Fast File Uploads",
-    description: "Upload your files quickly and efficiently.",
-    gradient: "from-[#00c851]/80 via-[#33d9b2]/20 to-transparent",
-    image: "/applications/upload.jpg",
-  },
-];
+import cardData from "./components/cardData";
 
 const Applications = () => {
   return (
@@ -45,7 +19,7 @@ const Applications = () => {
         {cardData.map((card, idx) => (
           <div
             key={idx}
-            className=" relative rounded-xl shadow-2xl overflow-hidden flex flex-col justify-end items-start group w-full h-[380px] sm:h-[400px]"
+            className=" relative rounded-xl shadow-2xl overflow-hidden flex flex-col justify-end items-start group w-full h-95 sm:h-100"
           >
             {/* Background Image */}
             <img
@@ -56,7 +30,7 @@ const Applications = () => {
 
             {/* Gradient Overlay like Entertainment cards */}
             <div
-              className={`absolute inset-0 bg-gradient-to-t ${card.gradient}`}
+              className={`absolute inset-0 bg-linear-to-t ${card.gradient}`}
             ></div>
 
             {/* Card Content */}

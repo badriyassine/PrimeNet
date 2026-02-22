@@ -1,8 +1,8 @@
-import Offers from "../../pages/home/components/Offers"
-import FiveGOffers from "../../pages/home/components/FiveGOffers"
+import Offers from "../../pages/home/components/offers/Offers"
+import FiveGOffers from "../../pages/home/components/FiveGOffers/FiveGOffers"
 import MobileOffers from "./components/MobileOffers"
-import Supports from "../../pages/home/components/Supports"
-import Entertainment from "../home/components/Entertainment"
+import Supports from "../../pages/home/components/support/Supports"
+import Entertainment from "../home/components/entertainment/Entertainment"
 import SatelliteOffers from "./../sat/SatelliteOffers"
 import Adsl from "./../wifi/components/Adsl"
 

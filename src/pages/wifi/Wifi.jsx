@@ -1,6 +1,6 @@
-import Offers from "../../pages/home/components/Offers"
+import Offers from "../../pages/home/components/offers/Offers"
 import Adsl from "./components/Adsl"
-import Supports from "../../pages/home/components/Supports"
+import Supports from "../../pages/home/components/support/Supports"
 import Ads from "./components/Ads"
 import SatelliteOffers from "./../sat/SatelliteOffers"
 

@@ -1,4 +1,4 @@
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 function generateBankCode() {
@@ -7,7 +7,6 @@ function generateBankCode() {
 
 export default function Payment() {
   const navigate = useNavigate();
-  const location = useLocation();
 
   const [method, setMethod] = useState("");
   const [accepted, setAccepted] = useState(false);

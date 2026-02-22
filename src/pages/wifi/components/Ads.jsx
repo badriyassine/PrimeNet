@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 import banner1 from "/ads/banner1.png";
 import banner2 from "/wifiAds/fiber.png";
-import logo from "/logo/Dark_logo.png";
 
 const slides = [
   {
@@ -36,7 +35,7 @@ const Ads = () => {
   return (
     <div className="w-full max-w-7xl mx-auto mb-5">
       <div className="bg-[#073651] rounded-xl md:mx-2 sm:mx-2 mx-2 overflow-hidden">
-        <div className="flex flex-col lg:flex-row lg:h-[420px]">
+        <div className="flex flex-col lg:flex-row lg:h-105">
           {/* IMAGE */}
           <div className="w-full lg:w-1/2 h-52 md:h-72 lg:h-full overflow-hidden relative">
             <div
@@ -78,9 +77,9 @@ const Ads = () => {
 
             {/* Decoration lines */}
             <div className="hidden lg:flex absolute top-6 right-6 flex-col gap-2 items-end">
-              <div className="h-[2px] w-16 bg-white/60 rounded-full"></div>
-              <div className="h-[2px] w-10 bg-white/40 rounded-full"></div>
-              <div className="h-[2px] w-6 bg-white/20 rounded-full"></div>
+              <div className="h-0.5 w-16 bg-white/60 rounded-full"></div>
+              <div className="h-0.5 w-10 bg-white/40 rounded-full"></div>
+              <div className="h-0.5 w-6 bg-white/20 rounded-full"></div>
             </div>
 
             {/* CLICKABLE DOTS BOTTOM RIGHT */}

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
-import Supports from "../../pages/home/components/Supports.jsx";
+import Supports from "../../pages/home/components/support/Supports";
 
 export default function Order() {
   const navigate = useNavigate();

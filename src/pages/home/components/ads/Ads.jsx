@@ -1,55 +1,11 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
-import banner1 from "/ads/banner1.png";
-import banner2 from "/ads/banner2.png";
-import banner3 from "/ads/banner3.png";
-import banner4 from "/ads/banner4.png";
-import banner5 from "/ads/banner5.png";
-import logo from "/logo/Dark_logo.png";
-
-const slides = [
-  {
-    image: banner1,
-    title: "Ultra Fast Fiber Internet",
-    desc: "Enjoy speeds up to 1Gbps with unlimited access, upgrading your online experience to the next level.",
-    button: "Discover",
-    path: "/wifi",
-  },
-  {
-    image: banner2,
-    title: "High 5G Coverage",
-    desc: "Stay connected everywhere with our best plans, offering unlimited data and nationwide coverage.",
-    button: "View Plans",
-    path: "/mobile",
-  },
-  {
-    image: banner3,
-    title: "*6 is Back",
-    desc: "Unlimited social media use — chat, scroll, and share. Stay connected on your favorite apps without limits!",
-    button: "Get it Now",
-    path: "/mobile",
-  },
-  {
-    image: banner4,
-    title: "Ultimate Gaming Experience",
-    desc: "Stable, lightning-fast ping for lag-free gaming.",
-    button: "Subscribe Now",
-    path: "/wifi",
-  },
-  {
-    image: banner5,
-    title: "VR-Ready Internet",
-    desc: "Ultra-fast, stable speeds for immersive VR experiences.",
-    button: "Try Now",
-    path: "/wifi",
-  },
-];
+import slides from "./components/slides";
 
 const Ads = () => {
   const [current, setCurrent] = useState(0);
 
-  // Automatic slide
+  // Automatic slide animation
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
@@ -61,7 +17,7 @@ const Ads = () => {
   return (
     <div className="w-full max-w-7xl mx-auto">
       <div className="bg-[#073651] md:mx-2 sm:mx-2 mx-2 rounded-xl overflow-hidden">
-        <div className="flex flex-col lg:flex-row lg:h-[420px]">
+        <div className="flex flex-col lg:flex-row lg:h-105">
           {/* IMAGE */}
           <div className="w-full lg:w-1/2 h-52 md:h-72 lg:h-full overflow-hidden relative">
             <div
@@ -93,9 +49,9 @@ const Ads = () => {
           <div className="w-full lg:w-1/2 flex flex-col justify-center p-10 text-white relative">
             {/* Decoration lines */}
             <div className="hidden lg:flex absolute top-6 right-6 flex-col gap-2 items-end">
-              <div className="h-[2px] w-16 bg-white/60 rounded-full"></div>
-              <div className="h-[2px] w-10 bg-white/40 rounded-full"></div>
-              <div className="h-[2px] w-6 bg-white/20 rounded-full"></div>
+              <div className="h-0.5 w-16 bg-white/60 rounded-full"></div>
+              <div className="h-0.5 w-10 bg-white/40 rounded-full"></div>
+              <div className="h-0.5 w-6 bg-white/20 rounded-full"></div>
             </div>
 
             <h1 className="text-3xl font-bold mb-4">{slides[current].title}</h1>
@@ -125,7 +81,7 @@ const Ads = () => {
                   key={index}
                   className={`w-3 h-3 rounded-full transition-all duration-300 focus:outline-none
                     ${current === index ? "bg-white" : "bg-gray-400"}`}
-                  onClick={() => setCurrent(index)} // ✅ Jump to slide on click
+                  onClick={() => setCurrent(index)}
                 />
               ))}
             </div>

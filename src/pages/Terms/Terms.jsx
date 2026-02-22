@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Supports from "../home/components/Supports";
+import Supports from "../home/components/support/Supports";
 
 export default function Terms() {
   return (

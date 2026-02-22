@@ -1,13 +1,13 @@
-import Questions from "./components/Questions"
-import Supports from "../home/components/Supports"
+import Questions from "./components/Questions";
+import Supports from "../home/components/support/Supports";
 
 const Faq = () => {
   return (
-    <div >
+    <div>
       <Questions />
       <Supports />
     </div>
-  )
-}
+  );
+};
 
-export default Faq
+export default Faq;

@@ -1,6 +1,6 @@
 import Ads from './components/Ads'
 import Form from './components/Form'
-import Info from './components/Info'
+import Info from './components/info/Info'
 
 
 const Support = () => {

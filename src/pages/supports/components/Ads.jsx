@@ -11,7 +11,7 @@ const Ads = () => {
   return (
     <div className="w-full max-w-7xl mx-auto mb-6">
       <div className="bg-[#073651] rounded-xl md:mx-2 sm:mx-2 mx-2 overflow-hidden shadow-xl">
-        <div className="flex flex-col lg:flex-row h-auto lg:h-[420px]">
+        <div className="flex flex-col lg:flex-row h-auto lg:h-105">
           {/* IMAGE */}
           <div className="w-full lg:w-1/2 h-52 md:h-72 lg:h-full overflow-hidden relative">
             <img
@@ -37,15 +37,15 @@ const Ads = () => {
           <div className="relative w-full lg:w-1/2 flex flex-col justify-center p-6 md:p-10 lg:p-14 text-white">
             {/* Decoration lines */}
             <div className="absolute top-6 right-6 flex flex-col gap-2 items-end">
-              <div className="h-[2px] w-16 bg-white/60 rounded-full"></div>
+              <div className="h-0.5 w-16 bg-white/60 rounded-full"></div>
 
-              <div className="h-[2px] w-10 bg-white/40 rounded-full"></div>
+              <div className="h-0.5 w-10 bg-white/40 rounded-full"></div>
 
-              <div className="h-[2px] w-6 bg-white/20 rounded-full"></div>
+              <div className="h-0.5 w-6 bg-white/20 rounded-full"></div>
             </div>
 
             {/* CONTENT */}
-            <div className="max-w-[520px]">
+            <div className="max-w-130">
               <h1 className="text-3xl lg:text-4xl font-bold mb-4">
                 Support Center
               </h1>
@@ -93,21 +93,7 @@ const Ads = () => {
               {/* BUTTON */}
 
               <Link to="https://web.whatsapp.com/" target="_blank">
-                <button
-                  className="
-                bg-white
-                text-[#073651]
-                font-semibold
-                px-7
-                py-3
-                rounded-full
-                hover:bg-gray-200
-                transition
-                shadow-lg
-                hover:shadow-xl
-                cursor-pointer
-                "
-                >
+                <button className=" bg-white text-[#073651] font-semibold  px-7  py-3  rounded-full hover:bg-gray-200 transition shadow-lg  hover:shadow-xl cursor-pointer   ">
                   Contact Support
                 </button>
               </Link>
