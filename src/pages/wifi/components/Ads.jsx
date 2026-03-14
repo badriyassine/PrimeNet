@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-import banner1 from "/ads/banner1.png";
-import banner2 from "/wifiAds/fiber.png";
+import banner1 from "/ads/banner1.jpg";
+import banner2 from "/wifiAds/fiber.jpg";
 
 const slides = [
   {

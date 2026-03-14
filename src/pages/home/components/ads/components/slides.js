@@ -1,8 +1,8 @@
-import banner1 from "/ads/banner1.png";
-import banner2 from "/ads/banner2.png";
-import banner3 from "/ads/banner3.png";
-import banner4 from "/ads/banner4.png";
-import banner5 from "/ads/banner5.png";
+import banner1 from "/ads/banner1.jpg";
+import banner2 from "/ads/banner2.jpg";
+import banner3 from "/ads/banner3.jpg";
+import banner4 from "/ads/banner4.jpg";
+import banner5 from "/ads/banner5.jpg";
 
 const slides = [
   {

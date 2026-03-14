@@ -1,5 +1,5 @@
-import banner2 from "/ads/banner2.png";
-import banner3 from "/ads/banner3.png";
+import banner2 from "/ads/banner2.jpg";
+import banner3 from "/ads/banner3.jpg";
 
 const slides = [
   {

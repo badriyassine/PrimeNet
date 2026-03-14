@@ -1,4 +1,4 @@
-import support from "/support/support.png";
+import support from "/support/support.jpg";
 import { Link } from "react-router-dom";
 
 import {
